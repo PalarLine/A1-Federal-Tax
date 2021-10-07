@@ -27,34 +27,34 @@ let tax = 0;
                tax = (income) * rate1;
    
             }
-                if(income >= 9950.01 && income <= 40525) {
+                if(income > 9950 && income <= 40525) {
                     tax = (9950 * rate1) + ((income - 9950) * rate2);
        
                 }
 
-                if(income >= 40525.01 && income <= 86375) {
+                if(income > 40525 && income <= 86375) {
                     tax = (9950 * rate1) + ((40525 - 9950) * rate2) + ((income - 40525) * rate3);
      
                 }
 
-                if(income >= 86375.01 && income <= 164925) {
+                if(income > 86375 && income <= 164925) {
                     tax = (9950 * rate1) + ((40525 - 9950) * rate2) + ((86375 - 40525) * rate3) + ((income - 86375) * rate4);
     
                 }
 
-                if(income >= 164925.01 && income <= 209425) {
+                if(income > 164925 && income <= 209425) {
                     tax = (9950 * rate1) + ((40525 - 9950) * rate2) + ((86375 - 40525) * rate3)
                      + ((164925 - 86375) * rate4) + ((income - 164925) * rate5);
     
                 }
 
-                if(income >= 209425.01 && income <= 523600) {
+                if(income > 209425 && income <= 523600) {
                     tax = (9950 * rate1) + ((40525 - 9950) * rate2) + ((86375 - 40525) * rate3) + ((164925 - 86375) * rate4) 
                     + ((209425 - 164925) * rate5) + ((income - 209425) * rate6);
     
                 }
 
-                if(income >= 523600.01) {
+                if(income > 523600) {
                     tax = (9950 * rate1) + ((40525 - 9950) * rate2) + ((86375 - 40525) * rate3) + ((164925 - 86375) * rate4) 
                     + ((209425 - 164925) * rate5) + ((523600 - 209425) * rate6) + ((income - 523600) * rate7);
     
